@@ -54,14 +54,46 @@
 		CF621E8E228C8DC200A4D2AC /* ShopMate */ = {
 			isa = PBXGroup;
 			children = (
-				CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */,
-				CF621E91228C8DC200A4D2AC /* ViewController.swift */,
-				CF621E93228C8DC200A4D2AC /* Main.storyboard */,
-				CF621E96228C8DC400A4D2AC /* Assets.xcassets */,
-				CF621E98228C8DC400A4D2AC /* LaunchScreen.storyboard */,
-				CF621E9B228C8DC400A4D2AC /* Info.plist */,
+				CF621EA3228C8FC500A4D2AC /* Application */,
+				CF621EA1228C8F9A00A4D2AC /* View Controllers */,
+				CF621EA2228C8FB300A4D2AC /* Storyboards */,
+				CF621EA4228C8FD300A4D2AC /* Third Party */,
 			);
 			path = ShopMate;
+			sourceTree = "<group>";
+		};
+		CF621EA1228C8F9A00A4D2AC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF621E91228C8DC200A4D2AC /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CF621EA2228C8FB300A4D2AC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CF621E93228C8DC200A4D2AC /* Main.storyboard */,
+				CF621E98228C8DC400A4D2AC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF621EA3228C8FC500A4D2AC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */,
+				CF621E9B228C8DC400A4D2AC /* Info.plist */,
+				CF621E96228C8DC400A4D2AC /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CF621EA4228C8FD300A4D2AC /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Third Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
