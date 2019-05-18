@@ -71,7 +71,7 @@ struct NetworkManager {
     
     // MARK: Products
     
-    func getProducts(_ queryParams: Parameters? = nil, completion: @escaping (_ productsData: String?, _ error: String?) -> ()) {
+    func getProducts(_ queryParams: Parameters? = nil, completion: @escaping (_ productsData: ProductContainer?, _ error: String?) -> ()) {
         let productsRequest = ShopMateApi.products(queryParams)
         self.router.request(productsRequest) { data, response, error in
 
@@ -89,7 +89,7 @@ struct NetworkManager {
                         return
                     }
                     do {
-                        let apiResponse = try JSONDecoder().decode(String.self, from: responseData)
+                        let apiResponse = try JSONDecoder().decode(ProductContainer.self, from: responseData)
                         print("completion(apiResponse.homepage_sections,nil)")
                         completion(apiResponse, nil)
                         return

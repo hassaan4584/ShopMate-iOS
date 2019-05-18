@@ -13,6 +13,7 @@
 		CF03610C228F13AD009E54C2 /* HotTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03610B228F13AD009E54C2 /* HotTVCell.swift */; };
 		CF03610E228F1509009E54C2 /* ColorSelectionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03610D228F1509009E54C2 /* ColorSelectionTVCell.swift */; };
 		CF036110228F15C8009E54C2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03610F228F15C8009E54C2 /* HomeVC.swift */; };
+		CF036116229058F5009E54C2 /* Prodouct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF036115229058F5009E54C2 /* Prodouct.swift */; };
 		CF621E90228C8DC200A4D2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */; };
 		CF621E92228C8DC200A4D2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E91228C8DC200A4D2AC /* ViewController.swift */; };
 		CF621E95228C8DC200A4D2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF621E93228C8DC200A4D2AC /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		CF03610B228F13AD009E54C2 /* HotTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTVCell.swift; sourceTree = "<group>"; };
 		CF03610D228F1509009E54C2 /* ColorSelectionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectionTVCell.swift; sourceTree = "<group>"; };
 		CF03610F228F15C8009E54C2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		CF036115229058F5009E54C2 /* Prodouct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prodouct.swift; sourceTree = "<group>"; };
 		CF621E8C228C8DC200A4D2AC /* ShopMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF621E91228C8DC200A4D2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,8 +95,16 @@
 		CF036112229023D5009E54C2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CF036115229058F5009E54C2 /* Prodouct.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CF03611422905841009E54C2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CF621E83228C8DC200A4D2AC = {
@@ -116,8 +126,9 @@
 		CF621E8E228C8DC200A4D2AC /* ShopMate */ = {
 			isa = PBXGroup;
 			children = (
-				CF036112229023D5009E54C2 /* Models */,
 				CF621EA3228C8FC500A4D2AC /* Application */,
+				CF03611422905841009E54C2 /* Utils */,
+				CF036112229023D5009E54C2 /* Models */,
 				CF621EA5228CA13700A4D2AC /* Networking */,
 				CF621EA1228C8F9A00A4D2AC /* View Controllers */,
 				CF621EA2228C8FB300A4D2AC /* Storyboards */,
@@ -299,6 +310,7 @@
 				CF621EB7228CA13700A4D2AC /* URLParameterEncoder.swift in Sources */,
 				CF621EBC228CA13700A4D2AC /* HTTPMethod.swift in Sources */,
 				CF036106228F129A009E54C2 /* MainBannerTVCell.swift in Sources */,
+				CF036116229058F5009E54C2 /* Prodouct.swift in Sources */,
 				CF036110228F15C8009E54C2 /* HomeVC.swift in Sources */,
 				CF621E90228C8DC200A4D2AC /* AppDelegate.swift in Sources */,
 			);
