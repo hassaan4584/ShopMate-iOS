@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF036106228F129A009E54C2 /* MainBannerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF036105228F129A009E54C2 /* MainBannerTVCell.swift */; };
+		CF036108228F12D8009E54C2 /* AutumnTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF036107228F12D8009E54C2 /* AutumnTVCell.swift */; };
+		CF03610A228F12F4009E54C2 /* MenShirtTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF036109228F12F4009E54C2 /* MenShirtTVCell.swift */; };
+		CF03610C228F13AD009E54C2 /* HotTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03610B228F13AD009E54C2 /* HotTVCell.swift */; };
+		CF03610E228F1509009E54C2 /* ColorSelectionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03610D228F1509009E54C2 /* ColorSelectionTVCell.swift */; };
+		CF036110228F15C8009E54C2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03610F228F15C8009E54C2 /* HomeVC.swift */; };
 		CF621E90228C8DC200A4D2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */; };
 		CF621E92228C8DC200A4D2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E91228C8DC200A4D2AC /* ViewController.swift */; };
 		CF621E95228C8DC200A4D2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF621E93228C8DC200A4D2AC /* Main.storyboard */; };
@@ -26,6 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF036105228F129A009E54C2 /* MainBannerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBannerTVCell.swift; sourceTree = "<group>"; };
+		CF036107228F12D8009E54C2 /* AutumnTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutumnTVCell.swift; sourceTree = "<group>"; };
+		CF036109228F12F4009E54C2 /* MenShirtTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenShirtTVCell.swift; sourceTree = "<group>"; };
+		CF03610B228F13AD009E54C2 /* HotTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTVCell.swift; sourceTree = "<group>"; };
+		CF03610D228F1509009E54C2 /* ColorSelectionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectionTVCell.swift; sourceTree = "<group>"; };
+		CF03610F228F15C8009E54C2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CF621E8C228C8DC200A4D2AC /* ShopMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF621E91228C8DC200A4D2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +69,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF036103228F1211009E54C2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CF036104228F1259009E54C2 /* Cells */,
+				CF03610F228F15C8009E54C2 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CF036104228F1259009E54C2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF036105228F129A009E54C2 /* MainBannerTVCell.swift */,
+				CF036107228F12D8009E54C2 /* AutumnTVCell.swift */,
+				CF036109228F12F4009E54C2 /* MenShirtTVCell.swift */,
+				CF03610B228F13AD009E54C2 /* HotTVCell.swift */,
+				CF03610D228F1509009E54C2 /* ColorSelectionTVCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CF036112229023D5009E54C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CF621E83228C8DC200A4D2AC = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +116,7 @@
 		CF621E8E228C8DC200A4D2AC /* ShopMate */ = {
 			isa = PBXGroup;
 			children = (
+				CF036112229023D5009E54C2 /* Models */,
 				CF621EA3228C8FC500A4D2AC /* Application */,
 				CF621EA5228CA13700A4D2AC /* Networking */,
 				CF621EA1228C8F9A00A4D2AC /* View Controllers */,
@@ -88,6 +129,7 @@
 		CF621EA1228C8F9A00A4D2AC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CF036103228F1211009E54C2 /* Home */,
 				CF621E91228C8DC200A4D2AC /* ViewController.swift */,
 			);
 			path = "View Controllers";
@@ -243,8 +285,12 @@
 				CF621EBE228CA13700A4D2AC /* NetworkLogger.swift in Sources */,
 				CF621EBD228CA13700A4D2AC /* Router.swift in Sources */,
 				CF621EBF228CA13700A4D2AC /* EndPointType.swift in Sources */,
+				CF03610A228F12F4009E54C2 /* MenShirtTVCell.swift in Sources */,
+				CF036108228F12D8009E54C2 /* AutumnTVCell.swift in Sources */,
 				CF621EB5228CA13700A4D2AC /* ParameterEncoding.swift in Sources */,
+				CF03610E228F1509009E54C2 /* ColorSelectionTVCell.swift in Sources */,
 				CF621EBA228CA13700A4D2AC /* ShopMateEndPoint.swift in Sources */,
+				CF03610C228F13AD009E54C2 /* HotTVCell.swift in Sources */,
 				CF621E92228C8DC200A4D2AC /* ViewController.swift in Sources */,
 				CF621EBB228CA13700A4D2AC /* HTTPTask.swift in Sources */,
 				CF621EB8228CA13700A4D2AC /* JSONParameterEncoder.swift in Sources */,
@@ -252,6 +298,8 @@
 				CF621EB6228CA13700A4D2AC /* URLParameterEncoderJSON.swift in Sources */,
 				CF621EB7228CA13700A4D2AC /* URLParameterEncoder.swift in Sources */,
 				CF621EBC228CA13700A4D2AC /* HTTPMethod.swift in Sources */,
+				CF036106228F129A009E54C2 /* MainBannerTVCell.swift in Sources */,
+				CF036110228F15C8009E54C2 /* HomeVC.swift in Sources */,
 				CF621E90228C8DC200A4D2AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

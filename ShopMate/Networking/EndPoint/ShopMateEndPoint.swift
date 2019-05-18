@@ -17,6 +17,8 @@ enum NetworkEnvironment {
 public enum ShopMateApi {
     
     case homepage
+    
+    case products(Parameters?)
 }
 
 extension ShopMateApi: EndPointType {
@@ -37,6 +39,9 @@ extension ShopMateApi: EndPointType {
         switch self {
             case .homepage:
                 return "mobileHomePage"
+            
+        case .products(_):
+            return "products"
         }
     }
     
@@ -51,6 +56,8 @@ extension ShopMateApi: EndPointType {
         switch self {
         case .homepage:
             return .request
+        case .products(let params):
+            return .requestParameters(bodyParameters: nil, bodyEncoding: ParameterEncoding.urlAndJsonEncoding, urlParameters: params)
         }
     }
     
