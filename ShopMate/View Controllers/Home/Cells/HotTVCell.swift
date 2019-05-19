@@ -10,6 +10,17 @@ import UIKit
 
 class HotTVCell: UITableViewCell {
 
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel?
+    @IBOutlet weak var productPriceLabel: UILabel!
+    
+    
+    var product: Product? {
+        didSet {
+            self.productNameLabel?.attributedText  = NSAttributedString.init(string: product?.productName ?? "")
+            self.productPriceLabel.text = product?.price
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
