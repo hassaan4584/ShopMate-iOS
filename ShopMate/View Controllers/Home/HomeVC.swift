@@ -33,11 +33,15 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     func fetchProducts() {
-        NetworkManager.sharedInstance.getProducts { (productsArr, errStr)  in
+        Spinner.sharedInstance.show(onViewController: self)
+        
+        NetworkManager.sharedInstance.getProducts { [weak self] (productsArr, errStr)  in
+            
+            if self != nil { Spinner.sharedInstance.hide(from: self!) }
             if errStr != nil {
-                print(errStr)
+                print(errStr!)
             } else {
-                print(productsArr)
+                print(productsArr!)
             }
         }
     }
