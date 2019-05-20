@@ -17,6 +17,10 @@
 		CF03611822917791009E54C2 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03611722917791009E54C2 /* Spinner.swift */; };
 		CF03611A2291879D009E54C2 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0361192291879D009E54C2 /* Product.storyboard */; };
 		CF03611D2291F0C7009E54C2 /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03611C2291F0C7009E54C2 /* ProductDetailsVC.swift */; };
+		CF036120229334CF009E54C2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF03611F229334CF009E54C2 /* Montserrat-Bold.ttf */; };
+		CF036122229334DD009E54C2 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF036121229334DD009E54C2 /* Montserrat-Light.ttf */; };
+		CF03612522933533009E54C2 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF036123229334EE009E54C2 /* OpenSans-Light.ttf */; };
+		CF03612622933536009E54C2 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */; };
 		CF621E90228C8DC200A4D2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */; };
 		CF621E92228C8DC200A4D2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E91228C8DC200A4D2AC /* ViewController.swift */; };
 		CF621E95228C8DC200A4D2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF621E93228C8DC200A4D2AC /* Main.storyboard */; };
@@ -46,6 +50,10 @@
 		CF03611722917791009E54C2 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		CF0361192291879D009E54C2 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		CF03611C2291F0C7009E54C2 /* ProductDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsVC.swift; sourceTree = "<group>"; };
+		CF03611F229334CF009E54C2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		CF036121229334DD009E54C2 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		CF036123229334EE009E54C2 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		CF621E8C228C8DC200A4D2AC /* ShopMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF621E91228C8DC200A4D2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +130,17 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
+		CF03611E22933497009E54C2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CF03611F229334CF009E54C2 /* Montserrat-Bold.ttf */,
+				CF036121229334DD009E54C2 /* Montserrat-Light.ttf */,
+				CF036123229334EE009E54C2 /* OpenSans-Light.ttf */,
+				CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		CF621E83228C8DC200A4D2AC = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +194,7 @@
 		CF621EA3228C8FC500A4D2AC /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				CF03611E22933497009E54C2 /* Fonts */,
 				CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */,
 				CF621E9B228C8DC400A4D2AC /* Info.plist */,
 				CF621E96228C8DC400A4D2AC /* Assets.xcassets */,
@@ -297,7 +317,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF036122229334DD009E54C2 /* Montserrat-Light.ttf in Resources */,
+				CF036120229334CF009E54C2 /* Montserrat-Bold.ttf in Resources */,
+				CF03612522933533009E54C2 /* OpenSans-Light.ttf in Resources */,
 				CF621E9A228C8DC400A4D2AC /* LaunchScreen.storyboard in Resources */,
+				CF03612622933536009E54C2 /* PlayfairDisplay-Regular.ttf in Resources */,
 				CF621E97228C8DC400A4D2AC /* Assets.xcassets in Resources */,
 				CF03611A2291879D009E54C2 /* Product.storyboard in Resources */,
 				CF621E95228C8DC200A4D2AC /* Main.storyboard in Resources */,

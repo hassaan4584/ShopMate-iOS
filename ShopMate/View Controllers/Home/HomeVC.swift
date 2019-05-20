@@ -53,6 +53,12 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "ProductDetailSegue" , let productVC = segue.destination as? ProductDetailsVC {
+            if let indexPath = self.homeTableview.indexPathForSelectedRow {
+                productVC.product = self.productsData?.productsList[indexPath.row]
+            }
+        }
     }
     
     // MARK: Tableview

@@ -25,10 +25,11 @@ class ProductDetailsVC: UIViewController {
         // Do any additional setup after loading the view.
         
         self.productQuantityLabel.layer.borderColor = UIColor.lightGray.cgColor
+        self.displayProductData()
     }
     
     
-    func setupView() {
+    func displayProductData() {
         self.productNameLabel.text  = self.product?.productName
         self.productPriceLabel.text = self.product?.price
         
