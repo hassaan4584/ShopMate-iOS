@@ -21,6 +21,7 @@
 		CF036122229334DD009E54C2 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF036121229334DD009E54C2 /* Montserrat-Light.ttf */; };
 		CF03612522933533009E54C2 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF036123229334EE009E54C2 /* OpenSans-Light.ttf */; };
 		CF03612622933536009E54C2 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */; };
+		CF03612822933874009E54C2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03612722933874009E54C2 /* Utils.swift */; };
 		CF621E90228C8DC200A4D2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */; };
 		CF621E92228C8DC200A4D2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E91228C8DC200A4D2AC /* ViewController.swift */; };
 		CF621E95228C8DC200A4D2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF621E93228C8DC200A4D2AC /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		CF036121229334DD009E54C2 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		CF036123229334EE009E54C2 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		CF03612722933874009E54C2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CF621E8C228C8DC200A4D2AC /* ShopMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF621E91228C8DC200A4D2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				CF03611722917791009E54C2 /* Spinner.swift */,
+				CF03612722933874009E54C2 /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				CF621EB8228CA13700A4D2AC /* JSONParameterEncoder.swift in Sources */,
 				CF621EB9228CA13700A4D2AC /* NetworkManager.swift in Sources */,
 				CF621EB6228CA13700A4D2AC /* URLParameterEncoderJSON.swift in Sources */,
+				CF03612822933874009E54C2 /* Utils.swift in Sources */,
 				CF621EB7228CA13700A4D2AC /* URLParameterEncoder.swift in Sources */,
 				CF621EBC228CA13700A4D2AC /* HTTPMethod.swift in Sources */,
 				CF036106228F129A009E54C2 /* MainBannerTVCell.swift in Sources */,

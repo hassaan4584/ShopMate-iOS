@@ -27,7 +27,8 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         // Do any additional setup after loading the view.
         self.homeTableview.tableFooterView = UIView()
-        
+        self.navigationItem.titleView = UIImageView.init(image: UIImage(named: "title"))
+
         self.fetchProducts()
         
     }
