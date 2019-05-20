@@ -27,14 +27,35 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         // Do any additional setup after loading the view.
         self.homeTableview.tableFooterView = UIView()
-        self.navigationItem.titleView = UIImageView.init(image: UIImage(named: "title"))
+        self.setupNavigationBar()
 
         self.fetchProducts()
         
     }
     
+    // MARK: UI
+    func setupNavigationBar() {
+        self.navigationItem.titleView = UIImageView.init(image: UIImage(named: "title"))
+        // button
+        let rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 22, height: 22))
+        rightButton.setBackgroundImage(UIImage(named: "navBarMenu"), for: .normal)
+        rightButton.addTarget(self, action: #selector(menuButtonPressed), for: .touchUpInside)
+        
+        // Bar button item
+        let rightBarButtomItem = UIBarButtonItem(customView: rightButton)
+        navigationItem.rightBarButtonItem = rightBarButtomItem
+        
+        print(navigationItem.leftBarButtonItem)
+        print(navigationItem.backBarButtonItem)
+    }
     
     
+    // MARK: Navigator
+    @objc func menuButtonPressed() {
+        
+    }
+    
+    // MARK: Api Calls
     func fetchProducts() {
         Spinner.sharedInstance.show(onViewController: self)
         

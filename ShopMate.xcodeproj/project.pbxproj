@@ -22,6 +22,7 @@
 		CF03612522933533009E54C2 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF036123229334EE009E54C2 /* OpenSans-Light.ttf */; };
 		CF03612622933536009E54C2 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */; };
 		CF03612822933874009E54C2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03612722933874009E54C2 /* Utils.swift */; };
+		CF03612B22934FCB009E54C2 /* ShopMateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03612A22934FCB009E54C2 /* ShopMateNavigationController.swift */; };
 		CF621E90228C8DC200A4D2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */; };
 		CF621E92228C8DC200A4D2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E91228C8DC200A4D2AC /* ViewController.swift */; };
 		CF621E95228C8DC200A4D2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF621E93228C8DC200A4D2AC /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		CF036123229334EE009E54C2 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		CF03612722933874009E54C2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CF03612A22934FCB009E54C2 /* ShopMateNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMateNavigationController.swift; sourceTree = "<group>"; };
 		CF621E8C228C8DC200A4D2AC /* ShopMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF621E91228C8DC200A4D2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		CF03611422905841009E54C2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CF03612922934F89009E54C2 /* Custom subclasses */,
 				CF03611722917791009E54C2 /* Spinner.swift */,
 				CF03612722933874009E54C2 /* Utils.swift */,
 			);
@@ -142,6 +145,14 @@
 				CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CF03612922934F89009E54C2 /* Custom subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				CF03612A22934FCB009E54C2 /* ShopMateNavigationController.swift */,
+			);
+			path = "Custom subclasses";
 			sourceTree = "<group>";
 		};
 		CF621E83228C8DC200A4D2AC = {
@@ -340,6 +351,7 @@
 			files = (
 				CF621EBE228CA13700A4D2AC /* NetworkLogger.swift in Sources */,
 				CF621EBD228CA13700A4D2AC /* Router.swift in Sources */,
+				CF03612B22934FCB009E54C2 /* ShopMateNavigationController.swift in Sources */,
 				CF621EBF228CA13700A4D2AC /* EndPointType.swift in Sources */,
 				CF03610A228F12F4009E54C2 /* MenShirtTVCell.swift in Sources */,
 				CF036108228F12D8009E54C2 /* AutumnTVCell.swift in Sources */,

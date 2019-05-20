@@ -25,7 +25,10 @@ class ProductDetailsVC: UIViewController {
         // Do any additional setup after loading the view.
         
         self.productQuantityLabel.layer.borderColor = UIColor.lightGray.cgColor
+        self.navigationItem.titleView = UIImageView.init(image: UIImage(named: "title"))
+
         self.displayProductData()
+        
     }
     
     

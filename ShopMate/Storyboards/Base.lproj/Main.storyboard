@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--SHOPMATE-->
         <scene sceneID="tne-QT-ifu">
@@ -453,10 +458,10 @@ Gradient Fade</string>
             </objects>
             <point key="canvasLocation" x="2685" y="-92"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Shop Mate Navigation Controller-->
         <scene sceneID="mc2-RP-PSj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4wb-tM-Z4U" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4wb-tM-Z4U" customClass="ShopMateNavigationController" customModule="ShopMate" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rxf-XK-dBS">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
