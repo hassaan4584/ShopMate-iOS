@@ -17,6 +17,8 @@ enum NetworkEnvironment {
 public enum ShopMateApi {
     
     case homepage
+    case generateUniqueCartId
+    case addProductToCart(Parameters?)
     
     case products(Parameters?)
 }
@@ -37,8 +39,12 @@ extension ShopMateApi: EndPointType {
     
     var path: String {
         switch self {
-            case .homepage:
-                return "mobileHomePage"
+        case .homepage:
+            return "mobileHomePage"
+        case .generateUniqueCartId:
+            return "shoppingcart/generateUniqueId"
+        case .addProductToCart(_):
+            return "shoppingcart/add"
             
         case .products(_):
             return "products"
@@ -47,6 +53,8 @@ extension ShopMateApi: EndPointType {
     
     var httpMethod: HTTPMethod {
         switch self {
+        case .addProductToCart(_):
+            return .post
         default:
             return .get
         }
@@ -54,9 +62,9 @@ extension ShopMateApi: EndPointType {
     
     var task: HTTPTask {
         switch self {
-        case .homepage:
+        case .homepage, .generateUniqueCartId:
             return .request
-        case .products(let params):
+        case .products(let params), .addProductToCart(let params):
             return .requestParameters(bodyParameters: nil, bodyEncoding: ParameterEncoding.urlAndJsonEncoding, urlParameters: params)
         }
     }

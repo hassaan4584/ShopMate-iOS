@@ -39,6 +39,8 @@
 		CF621EBD228CA13700A4D2AC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621EB2228CA13700A4D2AC /* Router.swift */; };
 		CF621EBE228CA13700A4D2AC /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621EB3228CA13700A4D2AC /* NetworkLogger.swift */; };
 		CF621EBF228CA13700A4D2AC /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621EB4228CA13700A4D2AC /* EndPointType.swift */; };
+		CFEFBC8D229D8C7E005AA642 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEFBC8C229D8C7E005AA642 /* CartManager.swift */; };
+		CFEFBC8F229F1CF7005AA642 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEFBC8E229F1CF7005AA642 /* Cart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		CF621EB2228CA13700A4D2AC /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		CF621EB3228CA13700A4D2AC /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		CF621EB4228CA13700A4D2AC /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		CFEFBC8C229D8C7E005AA642 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		CFEFBC8E229F1CF7005AA642 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				CF036115229058F5009E54C2 /* Prodouct.swift */,
+				CFEFBC8E229F1CF7005AA642 /* Cart.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 		CF03611422905841009E54C2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CFEFBC8B229D8C52005AA642 /* Managers */,
 				CF03612922934F89009E54C2 /* Custom subclasses */,
 				CF03611722917791009E54C2 /* Spinner.swift */,
 				CF03612722933874009E54C2 /* Utils.swift */,
@@ -273,6 +279,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		CFEFBC8B229D8C52005AA642 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CFEFBC8C229D8C7E005AA642 /* CartManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,8 +366,10 @@
 				CF621EBE228CA13700A4D2AC /* NetworkLogger.swift in Sources */,
 				CF621EBD228CA13700A4D2AC /* Router.swift in Sources */,
 				CF03612B22934FCB009E54C2 /* ShopMateNavigationController.swift in Sources */,
+				CFEFBC8F229F1CF7005AA642 /* Cart.swift in Sources */,
 				CF621EBF228CA13700A4D2AC /* EndPointType.swift in Sources */,
 				CF03610A228F12F4009E54C2 /* MenShirtTVCell.swift in Sources */,
+				CFEFBC8D229D8C7E005AA642 /* CartManager.swift in Sources */,
 				CF036108228F12D8009E54C2 /* AutumnTVCell.swift in Sources */,
 				CF621EB5228CA13700A4D2AC /* ParameterEncoding.swift in Sources */,
 				CF03610E228F1509009E54C2 /* ColorSelectionTVCell.swift in Sources */,

@@ -69,6 +69,69 @@ struct NetworkManager {
         }
     }
     
+    func generateUniqueCartId(_ completion: @escaping (_ cartId: String?, _ error: String?) -> ()) {
+        let uniqueIdRequest = ShopMateApi.generateUniqueCartId
+        self.router.request(uniqueIdRequest) { (data, response, error) in
+            
+            if error != nil {
+                completion(nil, error?.localizedDescription ?? DEFAULT_NETWORK_ERROR)
+                return
+            }
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let responseData = data else {
+                        print("completion(nil, NetworkResponse.noData.rawValue)")
+                        completion(nil, NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    do {
+                        let apiResponse = try JSONDecoder().decode(UniqueCartIDContainer.self, from: responseData)
+                        completion(apiResponse.cartID, nil)
+                        return
+                    } catch {
+                        print("completion(nil, NetworkResponse.unableToDecode.rawValue)")
+                        completion(nil, NetworkResponse.unableToDecode.rawValue)
+                    }
+                case .failure(let networkFailureError):
+                    completion(nil, networkFailureError)
+                }
+            }
+        }
+    }
+    
+    func addProductToCart(_ parameters: Parameters, _ completion: @escaping (_ products: CartContainer?, _ error: String?) -> ()) {
+        let uniqueIdRequest = ShopMateApi.generateUniqueCartId
+        self.router.request(uniqueIdRequest) { (data, response, error) in
+            
+            if error != nil {
+                completion(nil, error?.localizedDescription ?? DEFAULT_NETWORK_ERROR)
+                return
+            }
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let responseData = data else {
+                        completion(nil, NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    do {
+                        let productsArr = try JSONDecoder().decode(CartContainer.self, from: responseData)
+                        completion(productsArr, nil)
+                        return
+                    } catch {
+                        print("completion(nil, NetworkResponse.unableToDecode.rawValue)")
+                        completion(nil, NetworkResponse.unableToDecode.rawValue)
+                    }
+                case .failure(let networkFailureError):
+                    completion(nil, networkFailureError)
+                }
+            }
+        }
+    }
+    
     // MARK: Products
     
     func getProducts(_ queryParams: Parameters? = nil, completion: @escaping (_ productsData: ProductContainer?, _ error: String?) -> ()) {
