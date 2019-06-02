@@ -22,7 +22,12 @@ struct UniqueCartIDContainer: Codable {
     }
 }
 
-// MARK: - CartElement
+
+// MARK: - Cart
+typealias Cart = [CartElement]
+
+
+// MARK:  CartElement
 struct CartElement: Codable {
     let itemID, productID, quantity: Int
     let name, attributes, price, subtotal: String
@@ -34,6 +39,5 @@ struct CartElement: Codable {
     }
 }
 
-typealias Cart = [CartElement]
 
 
