@@ -101,9 +101,9 @@ struct NetworkManager {
         }
     }
     
-    func addProductToCart(_ parameters: Parameters, _ completion: @escaping (_ products: CartContainer?, _ error: String?) -> ()) {
-        let uniqueIdRequest = ShopMateApi.generateUniqueCartId
-        self.router.request(uniqueIdRequest) { (data, response, error) in
+    func addProductToCart(_ parameters: Parameters, _ completion: @escaping (_ products: Cart?, _ error: String?) -> ()) {
+        let addToCartRequest = ShopMateApi.addProductToCart(parameters)
+        self.router.request(addToCartRequest) { (data, response, error) in
             
             if error != nil {
                 completion(nil, error?.localizedDescription ?? DEFAULT_NETWORK_ERROR)
@@ -118,11 +118,10 @@ struct NetworkManager {
                         return
                     }
                     do {
-                        let productsArr = try JSONDecoder().decode(CartContainer.self, from: responseData)
+                        let productsArr = try JSONDecoder().decode(Cart.self, from: responseData)
                         completion(productsArr, nil)
                         return
                     } catch {
-                        print("completion(nil, NetworkResponse.unableToDecode.rawValue)")
                         completion(nil, NetworkResponse.unableToDecode.rawValue)
                     }
                 case .failure(let networkFailureError):

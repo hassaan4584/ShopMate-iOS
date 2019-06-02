@@ -48,4 +48,20 @@ class ProductDetailsVC: UIViewController {
     }
     */
 
+    func addProductToCart() {
+        guard self.product != nil else {
+            return
+        }
+        Spinner.sharedInstance.show(onViewController: self)
+        let params: Parameters = ["product_id": self.product!.productId, "attributes": "White"]
+        CartManager.sharedInstance.addProductToCart(params) {
+            Spinner.sharedInstance.hide(from: self)
+        }
+    }
+    
+    
+    // MARK: User Interaction
+    @IBAction func addToCartButtonPressed(_ sender: UIButton) {
+        self.addProductToCart()
+    }
 }

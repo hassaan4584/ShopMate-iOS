@@ -64,8 +64,10 @@ extension ShopMateApi: EndPointType {
         switch self {
         case .homepage, .generateUniqueCartId:
             return .request
-        case .products(let params), .addProductToCart(let params):
+        case .products(let params):
             return .requestParameters(bodyParameters: nil, bodyEncoding: ParameterEncoding.urlAndJsonEncoding, urlParameters: params)
+        case .addProductToCart(let params):
+            return .requestParameters(bodyParameters: params, bodyEncoding: .jsonEncoding, urlParameters: nil)
         }
     }
     
