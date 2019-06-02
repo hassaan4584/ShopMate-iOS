@@ -12,7 +12,11 @@ class CartManager: NSObject {
     
     static let sharedInstance: CartManager = CartManager()
     
-    var cartId: String?
+    var cartId: String? {
+        didSet {
+            UserDefaults.standard.set(cartId, forKey: "cartId")
+        }
+    }
     var cart: Cart?
     
     
@@ -67,7 +71,12 @@ extension CartManager {
     
     var isCartInitialized: Bool {
         get {
-            return self.cartId != nil
+            if self.cartId != nil { return true }
+            if let id = UserDefaults.standard.string(forKey: "cartId") {
+                self.cartId = id
+                return true
+            }
+            return false
         }
     }
 }
