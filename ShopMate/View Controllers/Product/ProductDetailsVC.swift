@@ -17,14 +17,6 @@ class ProductDetailsVC: UIViewController {
     @IBOutlet weak var productSizeOptionsStackView: UIStackView!
     @IBOutlet weak var productQuantityLabel: UILabel!
     
-    @IBOutlet weak var indigoColorAttButton: UIButton!
-    @IBOutlet weak var blueColorAttButton: UIButton!
-    @IBOutlet weak var redColorAttButton: UIButton!
-    @IBOutlet weak var orangeColorAttButton: UIButton!
-    @IBOutlet weak var yellowColorAttButton: UIButton!
-    @IBOutlet weak var greenColorAttButton: UIButton!
-    @IBOutlet weak var purpleColorAttButton: UIButton!
-
     
     
     

@@ -600,19 +600,12 @@
                     </view>
                     <size key="freeformSize" width="320" height="1068"/>
                     <connections>
-                        <outlet property="blueColorAttButton" destination="UHu-iL-ALg" id="5c0-01-Zus"/>
-                        <outlet property="greenColorAttButton" destination="8zd-lX-sRm" id="Pcq-y2-EGd"/>
-                        <outlet property="indigoColorAttButton" destination="6MO-2y-Dhg" id="BlL-5s-lnE"/>
-                        <outlet property="orangeColorAttButton" destination="nVZ-HK-hWA" id="Zbf-a5-yJE"/>
                         <outlet property="productColorOptionsStackView" destination="Ech-7T-C8M" id="OHD-5v-M7Y"/>
                         <outlet property="productNameLabel" destination="5hH-Ic-tQb" id="EBg-BA-hp2"/>
                         <outlet property="productPriceLabel" destination="11Z-vX-y3h" id="Mfh-QI-Bsc"/>
                         <outlet property="productQuantityLabel" destination="WpY-lb-bjf" id="Laa-Qb-jvm"/>
                         <outlet property="productSizeOptionsStackView" destination="UxT-lt-qud" id="G2z-X0-YMs"/>
-                        <outlet property="purpleColorAttButton" destination="DfV-Te-cq0" id="wfc-NW-oOU"/>
                         <outlet property="ratingsStackView" destination="NAi-8a-Bkn" id="TPX-hD-ajw"/>
-                        <outlet property="redColorAttButton" destination="6zF-Vy-QvT" id="aNc-J0-cKs"/>
-                        <outlet property="yellowColorAttButton" destination="Anl-OI-VrH" id="cbf-v0-YMi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwz-Mo-Dsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
