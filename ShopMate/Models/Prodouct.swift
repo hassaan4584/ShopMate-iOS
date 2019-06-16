@@ -52,5 +52,12 @@ struct Product: Decodable {
         discountedPrice = try container.decode(String.self, forKey: .discountedPrice)
         thumbnail       = try container.decode(String.self, forKey: .thumbnail)
     }
+    
+    
+    var productPriceStr: String {
+        get {
+            return "£" + price
+        }
+    }
 }
 

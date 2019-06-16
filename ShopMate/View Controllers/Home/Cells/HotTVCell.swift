@@ -18,7 +18,7 @@ class HotTVCell: UITableViewCell {
     var product: Product? {
         didSet {
             self.productNameLabel?.attributedText  = NSAttributedString.init(string: product?.productName ?? "")
-            self.productPriceLabel.text = product?.price
+            self.productPriceLabel.text = product?.productPriceStr
         }
     }
     override func awakeFromNib() {

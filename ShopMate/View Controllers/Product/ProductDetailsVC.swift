@@ -34,7 +34,7 @@ class ProductDetailsVC: UIViewController {
     
     func displayProductData() {
         self.productNameLabel.text  = self.product?.productName
-        self.productPriceLabel.text = self.product?.price
+        self.productPriceLabel.text = self.product?.productPriceStr
         
     }
 
