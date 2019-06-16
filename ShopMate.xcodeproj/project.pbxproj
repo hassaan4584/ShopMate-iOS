@@ -24,6 +24,7 @@
 		CF03612822933874009E54C2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03612722933874009E54C2 /* Utils.swift */; };
 		CF03612B22934FCB009E54C2 /* ShopMateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03612A22934FCB009E54C2 /* ShopMateNavigationController.swift */; };
 		CF076B2422B610BD00AA2F6E /* ProductAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF076B2322B610BD00AA2F6E /* ProductAttributes.swift */; };
+		CF076B2722B62B0400AA2F6E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF076B2622B62B0400AA2F6E /* Color.swift */; };
 		CF621E90228C8DC200A4D2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */; };
 		CF621E92228C8DC200A4D2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E91228C8DC200A4D2AC /* ViewController.swift */; };
 		CF621E95228C8DC200A4D2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF621E93228C8DC200A4D2AC /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		CF03612722933874009E54C2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CF03612A22934FCB009E54C2 /* ShopMateNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMateNavigationController.swift; sourceTree = "<group>"; };
 		CF076B2322B610BD00AA2F6E /* ProductAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAttributes.swift; sourceTree = "<group>"; };
+		CF076B2622B62B0400AA2F6E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CF621E8C228C8DC200A4D2AC /* ShopMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF621E91228C8DC200A4D2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		CF03611422905841009E54C2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CF076B2522B62AE300AA2F6E /* Extensions */,
 				CFEFBC8B229D8C52005AA642 /* Managers */,
 				CF03612922934F89009E54C2 /* Custom subclasses */,
 				CF03611722917791009E54C2 /* Spinner.swift */,
@@ -162,6 +165,14 @@
 				CF03612A22934FCB009E54C2 /* ShopMateNavigationController.swift */,
 			);
 			path = "Custom subclasses";
+			sourceTree = "<group>";
+		};
+		CF076B2522B62AE300AA2F6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF076B2622B62B0400AA2F6E /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CF621E83228C8DC200A4D2AC = {
@@ -375,6 +386,7 @@
 				CF03610A228F12F4009E54C2 /* MenShirtTVCell.swift in Sources */,
 				CFEFBC8D229D8C7E005AA642 /* CartManager.swift in Sources */,
 				CF036108228F12D8009E54C2 /* AutumnTVCell.swift in Sources */,
+				CF076B2722B62B0400AA2F6E /* Color.swift in Sources */,
 				CF621EB5228CA13700A4D2AC /* ParameterEncoding.swift in Sources */,
 				CF03610E228F1509009E54C2 /* ColorSelectionTVCell.swift in Sources */,
 				CF621EBA228CA13700A4D2AC /* ShopMateEndPoint.swift in Sources */,

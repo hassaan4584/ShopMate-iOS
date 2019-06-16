@@ -17,6 +17,17 @@ class ProductDetailsVC: UIViewController {
     @IBOutlet weak var productSizeOptionsStackView: UIStackView!
     @IBOutlet weak var productQuantityLabel: UILabel!
     
+    @IBOutlet weak var indigoColorAttButton: UIButton!
+    @IBOutlet weak var blueColorAttButton: UIButton!
+    @IBOutlet weak var redColorAttButton: UIButton!
+    @IBOutlet weak var orangeColorAttButton: UIButton!
+    @IBOutlet weak var yellowColorAttButton: UIButton!
+    @IBOutlet weak var greenColorAttButton: UIButton!
+    @IBOutlet weak var purpleColorAttButton: UIButton!
+
+    
+    
+    
     var product: Product?
     var productAttributes: ProductAttributesList?
         
@@ -33,7 +44,8 @@ class ProductDetailsVC: UIViewController {
                 if let errStr = errStr {
                     print(errStr)
                 } else {
-//                    self.productAttributes = attributesList
+                    self.productAttributes = attributesList
+                    self.refreshAttributesData()
                 }
             }
         }
@@ -46,6 +58,21 @@ class ProductDetailsVC: UIViewController {
         self.productNameLabel.text  = self.product?.productName
         self.productPriceLabel.text = self.product?.productPriceStr
         
+    }
+    
+    func refreshAttributesData() {
+        func addColorAttributes() {
+            for (index, attribute) in self.productAttributes!.productColorAttributes.enumerated() {
+                if index < self.productColorOptionsStackView.arrangedSubviews.count {
+                    self.productColorOptionsStackView.arrangedSubviews[index].backgroundColor = attribute.attributeColor
+                    self.productColorOptionsStackView.arrangedSubviews[index].isHidden = false
+
+
+                }
+            }
+        }
+        
+        addColorAttributes()
     }
 
     /*
