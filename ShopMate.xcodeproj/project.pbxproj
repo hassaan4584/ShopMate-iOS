@@ -23,6 +23,7 @@
 		CF03612622933536009E54C2 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */; };
 		CF03612822933874009E54C2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03612722933874009E54C2 /* Utils.swift */; };
 		CF03612B22934FCB009E54C2 /* ShopMateNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03612A22934FCB009E54C2 /* ShopMateNavigationController.swift */; };
+		CF076B2422B610BD00AA2F6E /* ProductAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF076B2322B610BD00AA2F6E /* ProductAttributes.swift */; };
 		CF621E90228C8DC200A4D2AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */; };
 		CF621E92228C8DC200A4D2AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF621E91228C8DC200A4D2AC /* ViewController.swift */; };
 		CF621E95228C8DC200A4D2AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF621E93228C8DC200A4D2AC /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		CF03612422933501009E54C2 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		CF03612722933874009E54C2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CF03612A22934FCB009E54C2 /* ShopMateNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMateNavigationController.swift; sourceTree = "<group>"; };
+		CF076B2322B610BD00AA2F6E /* ProductAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAttributes.swift; sourceTree = "<group>"; };
 		CF621E8C228C8DC200A4D2AC /* ShopMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF621E8F228C8DC200A4D2AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF621E91228C8DC200A4D2AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				CF036115229058F5009E54C2 /* Prodouct.swift */,
 				CFEFBC8E229F1CF7005AA642 /* Cart.swift */,
+				CF076B2322B610BD00AA2F6E /* ProductAttributes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF076B2422B610BD00AA2F6E /* ProductAttributes.swift in Sources */,
 				CF621EBE228CA13700A4D2AC /* NetworkLogger.swift in Sources */,
 				CF621EBD228CA13700A4D2AC /* Router.swift in Sources */,
 				CF03612B22934FCB009E54C2 /* ShopMateNavigationController.swift in Sources */,

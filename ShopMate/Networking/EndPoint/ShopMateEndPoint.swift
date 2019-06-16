@@ -21,6 +21,7 @@ public enum ShopMateApi {
     case addProductToCart(Parameters?)
     
     case products(Parameters?)
+    case attributesOfProduct(Int)
 }
 
 extension ShopMateApi: EndPointType {
@@ -48,6 +49,8 @@ extension ShopMateApi: EndPointType {
             
         case .products(_):
             return "products"
+        case .attributesOfProduct(let productId):
+            return "attributes/inProduct/\(productId)"
         }
     }
     
@@ -62,7 +65,7 @@ extension ShopMateApi: EndPointType {
     
     var task: HTTPTask {
         switch self {
-        case .homepage, .generateUniqueCartId:
+        case .homepage, .generateUniqueCartId, .attributesOfProduct(_):
             return .request
         case .products(let params):
             return .requestParameters(bodyParameters: nil, bodyEncoding: ParameterEncoding.urlAndJsonEncoding, urlParameters: params)

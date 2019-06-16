@@ -166,6 +166,40 @@ struct NetworkManager {
         }
     }
     
+    // Product Attributes
+    func getProductAttributes(_ productId: Int, completion: @escaping (_ productsData: ProductAttributesList?, _ error: String?) -> ()) {
+        let productAttributesRequest = ShopMateApi.attributesOfProduct(productId)
+        self.router.request(productAttributesRequest) { data, response, error in
+            
+            if error != nil {
+                completion(nil, error?.localizedDescription ?? DEFAULT_NETWORK_ERROR)
+                return
+            }
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let responseData = data else {
+                        print("completion(nil, NetworkResponse.noData.rawValue)")
+                        completion(nil, NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    do {
+                        let apiResponse = try JSONDecoder().decode(ProductAttributesList.self, from: responseData)
+                        print("completion(apiResponse.homepage_sections,nil)")
+                        completion(apiResponse, nil)
+                        return
+                    } catch {
+                        print("completion(nil, NetworkResponse.unableToDecode.rawValue)")
+                        completion(nil, NetworkResponse.unableToDecode.rawValue)
+                    }
+                case .failure(let networkFailureError):
+                    completion(nil, networkFailureError)
+                }
+            }
+        }
+    }
+    
     
     fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String>{
         switch response.statusCode {

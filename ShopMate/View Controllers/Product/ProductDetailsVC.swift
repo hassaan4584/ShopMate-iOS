@@ -18,6 +18,7 @@ class ProductDetailsVC: UIViewController {
     @IBOutlet weak var productQuantityLabel: UILabel!
     
     var product: Product?
+    var productAttributes: ProductAttributesList?
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,15 @@ class ProductDetailsVC: UIViewController {
         self.productQuantityLabel.layer.borderColor = UIColor.lightGray.cgColor
         self.navigationItem.titleView = UIImageView.init(image: UIImage(named: "title"))
 
+        if let product = self.product {
+            NetworkManager.sharedInstance.getProductAttributes(product.productId) { (attributesList, errStr) in
+                if let errStr = errStr {
+                    print(errStr)
+                } else {
+//                    self.productAttributes = attributesList
+                }
+            }
+        }
         self.displayProductData()
         
     }
